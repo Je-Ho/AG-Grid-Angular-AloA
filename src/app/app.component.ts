@@ -60,7 +60,7 @@ export class AppComponent {
       }
     },
     { field: 'Verfügbar' },
-    { field: 'Aktion' },
+    { field: 'Aktion'},
     {
       field: 'Status',
       cellStyle: params => {
