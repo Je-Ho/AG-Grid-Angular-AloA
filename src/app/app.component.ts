@@ -20,15 +20,15 @@ export class AppComponent {
       cellStyle: params => {
         if (params.value === 'hoch') {
           //mark hoch cells as red
-          return { color: 'white', backgroundColor: 'red' };
+          return { color: 'white', backgroundColor: '#ef0078' };
         }
         if (params.value === 'mittel') {
           //mark hoch cells as red
-          return { color: 'white', backgroundColor: 'orange' };
+          return { color: 'white', backgroundColor: '#f2bcf8' };
         }
         if (params.value === 'niedrig') {
           //mark hoch cells as red
-          return { color: 'black', backgroundColor: 'yellow' };
+          return { color: 'black', backgroundColor: '#fae4fc' };
         }
         return null;
       },
@@ -42,15 +42,15 @@ export class AppComponent {
       cellStyle: params => {
         if (params.value === 'hoch') {
           //mark hoch cells as red
-          return { color: 'white', backgroundColor: 'red' };
+          return { color: 'black', backgroundColor: '#75e900' };
         }
         if (params.value === 'mittel') {
           //mark hoch cells as red
-          return { color: 'white', backgroundColor: 'orange' };
+          return { color: 'black', backgroundColor: '#c6f68d' };
         }
         if (params.value === 'niedrig') {
           //mark hoch cells as red
-          return { color: 'white', backgroundColor: 'yellow' };
+          return { color: 'black', backgroundColor: '#f2fde4' };
         }
         return null;
       },
@@ -66,15 +66,15 @@ export class AppComponent {
       cellStyle: params => {
         if (params.value === 'Offen') {
           //mark hoch cells as red
-          return { color: 'white', backgroundColor: 'red' };
+          return { color: 'white', backgroundColor: '#81D4FA' };
         }
         if (params.value === 'In Arbeit') {
           //mark hoch cells as red
-          return { color: 'white', backgroundColor: 'orange' };
+          return { color: 'white', backgroundColor: '#29B6F6' };
         }
         if (params.value === 'Abgeschlossen') {
           //mark hoch cells as red
-          return { color: 'white', backgroundColor: 'green' };
+          return { color: 'white', backgroundColor: '#0277BD' };
         }
         return null;
       },
