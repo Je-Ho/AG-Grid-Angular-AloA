@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ButtonRendererComponent } from './renderer/button-renderer.component';
 
 @Component({
   selector: 'my-app',
@@ -6,6 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  frameworkComponents: any;
+  rowDataClicked1 = {};
+
+  constructor() {
+    this.frameworkComponents = {
+      buttonRenderer: ButtonRendererComponent,
+    }
+  }
+
+
   columnDefs = [
     {
       field: 'Art',
@@ -60,7 +71,15 @@ export class AppComponent {
       }
     },
     { field: 'Verfügbar' },
-    { field: 'Aktion'},
+    { field: 'Aktion' },
+ //   {
+ //     headerName: 'Button Col 1',
+ //     cellRenderer: 'buttonRenderer',
+ //     cellRendererParams: {
+ //       onClick: this.onBtnClick1.bind(this),
+ //       label: 'Click 1'
+ //     }
+ //   },
     {
       field: 'Status',
       cellStyle: params => {
@@ -150,4 +169,9 @@ export class AppComponent {
       Status: 'Abgeschlossen'
     }
   ];
+
+  onBtnClick1(e) {
+    this.rowDataClicked1 = e.rowData;
+  }
+
 }

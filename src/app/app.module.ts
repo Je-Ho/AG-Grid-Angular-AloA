@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AgGridModule } from 'ag-grid-angular';
+import { HelloComponent } from './hello.component';
+import { ButtonRendererComponent } from './renderer/button-renderer.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, AgGridModule.withComponents([]) ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
+  imports: [BrowserModule, FormsModule, AgGridModule.withComponents([])],
+  declarations: [AppComponent, HelloComponent, ButtonRendererComponent],
+  bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
